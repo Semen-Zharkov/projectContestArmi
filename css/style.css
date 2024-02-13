@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto";
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+}
+.main-block{
+    background: linear-gradient(34deg, rgba(240, 73, 73, 1) 50%, rgba(242, 109, 109, 1) 50%);
+}
+.block-armi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.btn-button{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 0.25rem;
+    padding: 0.75rem 3.5rem;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem rgba(0, 0, 0, 0.25);
+}
+.btn-button.active{
+    display: none;
+}
+.btn-button span{
+    color:  rgba(0, 0, 0, 1);
+    font-size: 0.75rem
+}
+
+
+
+/* Попап */
+.popup-card{
+    display: none;
+    min-width: 552px;
+    height: 467px;
+    box-shadow: 0rem 0.25rem 1.875rem 0rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.popup-card.active{
+    display: block;
+}
+.popup-card-container{
+    display: flex;
+    flex-direction: column;
+}
+.card-header{
+    background-color: rgba(232, 235, 243, 1);
+    width: 100%;
+}
+.card-header-conteiner{
+    display: flex;
+    justify-content: start;
+    gap:0.375rem;
+    padding: 0.5rem 15px 0.5rem;
+}
+.card-header div{
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+    border-radius: 0.4375rem;
+}
+.btn-close{
+    background-color:rgba(232, 81, 98, 1)
+}
+.btn-two{
+    background-color:rgba(242, 155, 61, 1)
+}
+.btn-three{
+    background-color:rgba(64, 171, 85, 1)
+}
+
+.card-promo{
+    width: 100%;
+    background-color: rgba(218, 224, 228, 1);
+    justify-content: center;
+}
+
+.card-promo-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 552px;
+    gap: 0.6875rem;
+    margin: 2.5rem auto;
+}
+.text-title{
+    text-align: center;
+    min-width: 7.125rem;
+    min-height: 0.9375rem;
+    background-color: rgba(197, 203, 207, 1);
+}
+.text-description{
+    text-align: center;
+    min-width: 2.5625rem;
+    min-height: 0.9375rem;
+    background-color: rgba(197, 203, 207, 1);
+}
+
+
+
+.card-main{
+    background-color:  rgba(255, 255, 255, 1);
+}
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 332px;
+    margin: 1.25rem auto 2rem;
+    gap: 1rem;
+}
+.item-img{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(218, 224, 228, 1);
+    border-radius: 0.25rem;
+}
+.card-list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.item-description{
+    background-color: rgba(198, 202, 205, 1);
+    min-height: 0.9375rem;
+    border-radius: 0.25rem;
+}
+.card-list-item:nth-child(1) .item-description{
+    max-width: 2.5625rem;
+}
+.card-list-item:nth-child(2) .item-description{
+    max-width: 5.5rem;
+}
+.card-list-item:nth-child(3) .item-description{
+    max-width: 4.1875rem;
+}
+.card-list-item:nth-child(4) .item-description{
+    max-width: 2.1875rem;
+}
+.card-list-item:nth-child(5) .item-description{
+    max-width: 4.1875rem;
+}
+.card-list-item:nth-child(6) .item-description{
+    max-width: 2.1875rem;
+}
